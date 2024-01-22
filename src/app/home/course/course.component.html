@@ -1,0 +1,26 @@
+<div>    
+    <table class="course-table" *ngIf="courses.length">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Description</th>
+          <th>Cathegorie</th>
+          <th>Sujet</th>
+          <th>Debut</th>
+          <th>Fin</th>
+          <th>Nombre d'etudiants</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let course of courses">
+          <td>{{ course.name }}</td>
+          <td>{{ course.description }}</td>
+          <td>{{ course.category }}</td>
+          <td>{{ course.subject }}</td>
+          <td>{{ course.start_time }}</td>
+          <td>{{ course.end_time }}</td>
+          <td>{{ course.number_of_students }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

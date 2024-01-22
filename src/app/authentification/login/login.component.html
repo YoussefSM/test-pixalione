@@ -1,0 +1,39 @@
+<div class="container text-center center">
+    <form class="form-signin" #LoginForm="ngForm">
+      <h1>Please Log In</h1>
+
+      <label>Username</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Username"
+        required
+        [(ngModel)]="credentials.username"
+        name="username"
+      >
+
+      <label>Password</label>
+      <input
+        type="password"
+        class="form-control"
+        placeholder="Password"
+        required
+        [(ngModel)]="credentials.password"
+        name="password"
+      >
+          
+      <button
+        class="custom-button"
+        type="submit"
+        [disabled]="LoginForm.invalid"
+        (click)="onSubmit()"
+      >Login</button>
+
+      <div>
+        {{ alert }}
+      </div>
+      
+      
+    </form>
+</div>
+  

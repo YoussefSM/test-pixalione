@@ -1,0 +1,17 @@
+<div class="navbar">
+    <h1 class="navbar-head">Cours</h1>
+    <div class="navbar-searchbox">
+      <input
+        class="navbar-searchfield"
+        type="text"
+        [(ngModel)]="searchField"
+        placeholder="Search for course"
+      />
+      <button class="button-primary" (click)="search()">Search</button>
+    </div>
+    <div class="navbar-userbtns">
+      <button class="button-secondary" [routerLink]="['/profil']">Mon Profil</button>
+      <button class="button-secondary" (click)="logout()">Log Out</button>
+    </div>
+</div>
+  

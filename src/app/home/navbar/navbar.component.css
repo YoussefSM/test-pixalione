@@ -1,0 +1,61 @@
+/* Reset some default styles */
+body, h1, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+/* Styling for the heading */
+.navbar-head {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Styling for the search box */
+.navbar-searchbox {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-searchfield {
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Styling for buttons */
+.button-primary,
+.button-secondary {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.button-primary {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.button-secondary {
+    background-color: #555;
+    color: white;
+    margin-left: 10px;
+}
+
+/* Hover effect on buttons */
+.button-primary:hover,
+.button-secondary:hover {
+    filter: brightness(1.2);
+}
